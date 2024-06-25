@@ -285,7 +285,8 @@ class KillCallback:
         self.counter += 1
 
 
-@pytest.mark.parametrize("backend", ["test", "torch", "tf", "horovod"])
+# @pytest.mark.parametrize("backend", ["test", "torch", "tf", "horovod"])
+@pytest.mark.parametrize("backend", ["test", "torch", "tf"])
 def test_worker_kill(ray_start_4_cpus, backend):
     if backend == "test":
         test_config = BackendConfig()

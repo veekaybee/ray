@@ -159,7 +159,7 @@ py_test(
     name = "horovod_cifar_pbt_example",
     size = "small",
     srcs = ["examples/horovod/horovod_cifar_pbt_example.py"],
-    tags = ["team:ml", "exlusive"],
+    tags = ["team:ml", "exlusive", "manual"],
     deps = [":train_lib"],
     args = ["--smoke-test"]
 )
@@ -168,7 +168,7 @@ py_test(
     name = "horovod_pytorch_example",
     size = "small",
     srcs = ["examples/horovod/horovod_pytorch_example.py"],
-    tags = ["team:ml", "exclusive"],
+    tags = ["team:ml", "exclusive", "manual"],
     deps = [":train_lib"],
     args = ["--num-epochs=1"]
 )
@@ -177,7 +177,7 @@ py_test(
     name = "horovod_tune_example",
     size = "small",
     srcs = ["examples/horovod/horovod_tune_example.py"],
-    tags = ["team:ml", "exclusive"],
+    tags = ["team:ml", "exclusive", "manual"],
     deps = [":train_lib"],
     args = ["--smoke-test"]
 )
@@ -377,7 +377,7 @@ py_test(
     name = "test_horovod_trainer",
     size = "large",
     srcs = ["tests/test_horovod_trainer.py"],
-    tags = ["team:ml", "exclusive", "ray_air"],
+    tags = ["team:ml", "exclusive", "ray_air", "manual"],
     deps = [":train_lib"]
 )
 

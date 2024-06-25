@@ -315,7 +315,8 @@ doctest(
         exclude=[
             # GPU
             "source/train/user-guides/data-loading-preprocessing.rst",
-            "source/train/user-guides/using-gpus.rst"
+            "source/train/user-guides/using-gpus.rst",
+            "source/train/horovod.rst",
         ]
     ),
     tags = ["team:ml"]

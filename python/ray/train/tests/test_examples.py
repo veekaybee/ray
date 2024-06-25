@@ -106,6 +106,7 @@ def test_torch_non_distributed(ray_start_4_cpus):
     trainer.fit()
 
 
+@pytest.mark.skip(reason="horovod is not installed in CI")
 def test_horovod_torch_mnist(ray_start_4_cpus):
     num_workers = 2
     num_epochs = 2
